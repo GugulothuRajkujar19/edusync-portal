@@ -1,0 +1,65 @@
+<div class="login-page">
+
+  <!-- Header -->
+
+  <div class="login-header">
+    <div class="logo">
+      🎓 MCA Student Portal
+    </div>
+
+    <div class="header-text">
+      Student Portal
+    </div>
+  </div>
+
+
+  <!-- Login Box -->
+
+  <div class="login-container">
+
+    <div class="login-box">
+
+      <div class="login-icon">
+        👨‍🎓
+      </div>
+
+      <h1>Student Login</h1>
+
+      <p class="subtitle">
+        Welcome back! Please login to continue.
+      </p>
+
+
+      <label for="studentId">Student ID</label>
+
+      <input
+        type="text"
+        id="studentId"
+        placeholder="Enter your Student ID">
+
+
+      <label for="password">Password</label>
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter your Password">
+
+
+      <button
+        type="button"
+        (click)="goToDashboard()">
+        Login →
+      </button>
+
+
+      <p class="back-text">
+        Login as Faculty?
+        <a routerLink="/faculty-login">Faculty Login</a>
+      </p>
+
+    </div>
+
+  </div>
+
+</div>

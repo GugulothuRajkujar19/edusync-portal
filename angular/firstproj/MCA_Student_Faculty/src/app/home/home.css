@@ -1,0 +1,262 @@
+/* Full Page */
+
+.home-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef5ff, #f8f5ff);
+}
+
+
+/* Header */
+
+.header {
+  height: 75px;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: linear-gradient(90deg, #1557b0, #4b3cc4);
+  color: white;
+
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.logo:first-letter {
+  font-size: 32px;
+}
+
+.header-text {
+  font-size: 16px;
+}
+
+
+/* Main */
+
+.main-content {
+  min-height: calc(100vh - 75px);
+  padding: 55px 30px;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+
+/* Welcome */
+
+.welcome-section {
+  margin-bottom: 40px;
+}
+
+.cap-icon {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.welcome-section h1 {
+  margin: 0;
+
+  font-size: 42px;
+  color: #172b75;
+}
+
+.welcome-section p {
+  margin-top: 12px;
+
+  font-size: 20px;
+  color: #53627a;
+}
+
+
+/* Login Cards */
+
+.login-cards {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+
+  flex-wrap: wrap;
+}
+
+
+/* Card */
+
+.login-card {
+  width: 350px;
+  min-height: 330px;
+
+  padding: 35px;
+
+  box-sizing: border-box;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  border-radius: 18px;
+
+  box-shadow: 0 10px 30px rgba(40, 60, 120, 0.15);
+
+  transition: 0.3s;
+}
+
+.login-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 15px 35px rgba(40, 60, 120, 0.25);
+}
+
+
+/* Student Card */
+
+.student-card {
+  border: 2px solid #8ab8ff;
+}
+
+
+/* Faculty Card */
+
+.faculty-card {
+  border: 2px solid #b6a5ff;
+}
+
+
+/* Icon */
+
+.icon-circle {
+  width: 75px;
+  height: 75px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  font-size: 38px;
+
+  background: #e7f0ff;
+}
+
+.faculty-card .icon-circle {
+  background: #eee9ff;
+}
+
+
+/* Card Text */
+
+.login-card h2 {
+  margin: 10px 0;
+
+  font-size: 28px;
+}
+
+.student-card h2 {
+  color: #185abd;
+}
+
+.faculty-card h2 {
+  color: #5336b8;
+}
+
+.login-card p {
+  min-height: 55px;
+
+  line-height: 1.6;
+
+  font-size: 16px;
+
+  color: #5d6675;
+}
+
+
+/* Buttons */
+
+.login-card button {
+  width: 100%;
+
+  margin-top: 20px;
+
+  padding: 13px;
+
+  border: none;
+  border-radius: 8px;
+
+  color: white;
+
+  font-size: 17px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.student-card button {
+  background: #1976d2;
+}
+
+.student-card button:hover {
+  background: #125aaa;
+}
+
+.faculty-card button {
+  background: #6547c7;
+}
+
+.faculty-card button:hover {
+  background: #4f35a5;
+}
+
+
+/* Bottom */
+
+.bottom-text {
+  margin-top: 55px;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  color: #5368b5;
+  font-style: italic;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .header {
+    height: auto;
+    padding: 20px;
+
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-text {
+    font-size: 13px;
+  }
+
+  .welcome-section h1 {
+    font-size: 32px;
+  }
+
+  .login-cards {
+    gap: 25px;
+  }
+
+  .login-card {
+    width: 90%;
+  }
+
+}
